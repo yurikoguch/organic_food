@@ -1,0 +1,997 @@
+@import '../../src/style/slick';
+@import '../../src/style/slick-theme';
+
+body > section:nth-child(3) > div > nav {
+  padding-top: 0rem;
+}
+a:hover:-webkit-any-link{
+  text-decoration: none;
+  text-underline: none;
+}
+.logo {
+  width: 100px;
+  height: 132px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20;
+  color: #4f4a37;
+  background: #fcdb5a;
+  text-decoration: none;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.menu {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 40px;
+
+  &:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #fcdb5a;
+    margin-bottom: -2px;
+  }
+}
+
+#bootstrap-overrides .GetIn {
+  width: 155px;
+  height: 45px;
+  background: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+  border-radius: 25px;
+  justify-content: center;
+
+  &:hover {
+    background: #fcdb5a;
+  }
+}
+
+//------- HERO section --------
+.hero {
+  background: url("../img/heroBg.jpg") center center no-repeat;
+  height: 1631px;
+  background-size: cover;
+  margin-top: -141px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero_title {
+  font-weight: 700;
+  font-size: 200px;
+  font-family: storytellaregular, sans-serif;
+  line-height: 200px;
+  color: #ffffff;
+  padding-top: 205px;
+}
+
+#bootstrap-overrides .content {
+  width: 95%;
+  margin: 0 auto;
+
+  a {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: Raleway, sans-serif;
+    color: white;
+
+    h3 {
+      font-weight: 900;
+
+    }
+
+    h4 {
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        left: 0;
+        top: 0;
+        right:0;
+        transition: opacity 0.6s;
+        opacity: 0;
+        text-underline: none;
+
+      }
+
+      &:hover::after {
+        opacity: 1;
+        text-decoration: none;
+        text-underline: none;
+        color: #fcdb5a;
+      }
+  }
+
+  .awesome {
+    background: url("../img/awesome.png") center center no-repeat;
+    height: 679px;
+    background-size: cover;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  .organic {
+    background: url("../img/organic.png") center center no-repeat;
+    height: 310px;
+    background-size: cover;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  .tasty {
+    background: url("../img/tasty.png") center center no-repeat;
+    height: 310px;
+    background-size: cover;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  .products {
+    height: 369px;
+    color: #fcdb5a;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h4 {
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+  }
+
+  .juicy {
+    background: url("../img/juicy.png") center center no-repeat;
+    height: 369px;
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: start;
+    flex-direction: column;
+  }
+}
+////-------- SLOGAN section--------
+.slogan {
+  position: relative;
+  height: 700px;
+
+  .pictures {
+    background: url("../img/picturesBg.png") center center no-repeat;
+    height: 533px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    .pepper {
+      background: url("../img/pepper.png") center right no-repeat;
+      height: 492px;
+      background-size: cover;
+      position: absolute;
+      left: 125px;
+      top: calc(15%);
+    }
+  }
+
+  .sloganItem {
+    background: url("../img/sloganBG.png") center center no-repeat;
+    height: 492px;
+    width: 329px;
+    position: absolute;
+    left: calc(50% - 130px);
+    bottom: 100px;
+  }
+
+  .sloganText {
+    position: absolute;
+    left: calc(55%);
+    top: 30%;
+
+    h3 {
+      font-family: storytellaregular, sans-serif;
+      font-size: 100px;
+      line-height: 100px;
+
+      span:first-of-type {
+        color: #fde557;
+      }
+
+      span:nth-of-type(2) {
+        color: #e5248a;
+      }
+
+      span:nth-of-type(3) {
+        color: #73b63c;
+      }
+
+      span:nth-of-type(4) {
+        color: #f7ab32;
+      }
+
+      span:nth-of-type(5) {
+        color: #4bbdd5;
+      }
+    }
+
+  }
+}
+/////------- Agro Services ---------
+.agroServices {
+  height: 70vh;
+
+  .agroServicesTypes {
+    margin-bottom: 135px;
+  }
+
+  .title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    span {
+      font-weight: 100;
+    }
+  }
+
+  .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #e1e1e1;
+  }
+
+  .row {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
+    line-height: 50px;
+
+    .steak {
+      background: url("../img/steak.png") center center no-repeat;
+      width: 57px;
+      height: 57px;
+    }
+
+    .gereals {
+      background: url("../img/gereals.png") center center no-repeat;
+      width: 57px;
+      height: 57px;
+    }
+
+    .pizza {
+      background: url("../img/pizza.png") center center no-repeat;
+      width: 57px;
+      height: 57px;
+    }
+
+    .burgers {
+      background: url("../img/burgers.png") center center no-repeat;
+      width: 57px;
+      height: 57px;
+    }
+
+    .cupcake {
+      background: url("../img/cupcake.png") center center no-repeat;
+      width: 57px;
+      height: 57px;
+    }
+
+    .vegetables {
+      background: url("../img/vegetables.png") center center no-repeat;
+      width: 57px;
+      height: 57px;
+    }
+  }
+}
+/////// --------------- Agro Perfect section --------
+.agroPerfect {
+  background: url("../img/perfectBG.jpg") center center no-repeat;
+  height: 693px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  color: white;
+
+  h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    color: #e1e1e1;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .Discover {
+    width: 160px;
+    height: 55px;
+    background: #fcdb5a;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #4f4a37;
+    border-radius: 25px;
+    border: none;
+    justify-content: center;
+    margin: 50px 0 0 15px;
+  }
+}
+///////---------- Food 4 U section---------
+.foodForU {
+  margin-top: -100px;
+  background: #f9f9f9;
+  margin-bottom: 100px;
+
+  .text {
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+
+    h4 {
+      font-family: Raleway, sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      color: #333333;
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 23px;
+      color: #666666;
+    }
+  }
+
+  .rawBG {
+    background: url("../img/rawBG.png") center center no-repeat;
+    background-size: cover;
+    height: 221px;
+
+  }
+
+  .fruitBG {
+    background: url("../img/fruitBG.png") center center no-repeat;
+    background-size: cover;
+    height: 221px;
+  }
+
+  .crepesBG {
+    background: url("../img/crepesBG.png") center center no-repeat;
+    background-size: cover;
+    height: 221px;
+  }
+
+  .blueberryBG {
+    background: url("../img/blueberryBG.png") center center no-repeat;
+    background-size: cover;
+    height: 221px;
+  }
+}
+
+
+
+///////----------- Banner section ------
+#bootstrap-overrides .banner {
+  padding: 0;
+
+  #myVideo {
+    width: 98.7vw;
+    height: 100%;
+  }
+
+  .banner_title {
+    font-family: storytellaregular, sans-serif;
+    font-size: 230px;
+    line-height: 180px;
+    color: #ffffff;
+    position: absolute;
+    top: 500px;
+  }
+}
+
+//////------Agro Progress section -------
+.agroProgress {
+  height: 70vh;
+
+
+  .title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    span {
+      font-weight: 100;
+    }
+  }
+
+  .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #e1e1e1;
+  }
+
+  .agroProgressTypes {
+
+    h5 {
+      font-family: Raleway, sans-serif;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    p {
+      font-family: Raleway, sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 50px;
+    }
+
+    .muffin {
+      background: url("../img/muffin-Icon.png") center center no-repeat;
+      width: 70px;
+      height: 69px;
+    }
+
+    .cakes {
+      background: url("../img/cakes-icon.png") center center no-repeat;
+      width: 68px;
+      height: 60px;
+    }
+
+    .perfectCupcakes {
+      background: url("../img/cupkaces-icon.png") center center no-repeat;
+      width: 55px;
+      height: 76px;
+    }
+
+    .doughnut {
+      background: url("../img/doughnut-icon.png") center center no-repeat;
+      width: 70px;
+      height: 52px;
+    }
+  }
+}
+/////-------- Agro products-------
+.products {
+
+  .row {
+
+    .hover {
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        left: 0;
+        top: 0;
+        transition: opacity 0.6s;
+        opacity: 0;
+      }
+
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+
+    .jamBG {
+      background: url("../img/jamBG.png") center center no-repeat;
+      background-size: cover;
+      height: 370px;
+      width: 100%;
+    }
+
+    .teaBg {
+      background: url("../img/teaBg.png") center center no-repeat;
+      background-size: cover;
+      height: 370px;
+      width: 100%;
+    }
+
+    .honeyBg {
+      background: url("../img/honeyBg.png") center center no-repeat;
+      background-size: cover;
+      height: 370px;
+      width: 100%;
+    }
+
+    .puddingBg {
+      background: url("../img/puddingBg.png") center center no-repeat;
+      background-size: cover;
+      height: 370px;
+      width: 100%;
+    }
+
+    .nuts {
+      background: url("../img/nutsBg.png") center center no-repeat;
+      background-size: cover;
+      height: 370px;
+      width: 100%;
+    }
+
+    .smoothie {
+      background: url("../img/smoothie.png") center center no-repeat;
+      background-size: cover;
+      height: 370px;
+    }
+
+    .marmalade {
+      background: url("../img/marmeladeBg.png") center center no-repeat;
+      background-size: cover;
+      height: 370px;
+    }
+
+    .sandwich {
+      background: url("../img/sandwichBg.png") center center no-repeat;
+      background-size: cover;
+      height: 370px;
+    }
+  }
+}
+////////--------- People says--------
+.peopleSays {
+  background: url("../img/peopleBg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+
+  .title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #ffffff;
+
+    span {
+      font-weight: 100;
+      color: #e1e1e1;
+    }
+  }
+
+  .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #e1e1e1;
+    margin-bottom: 100px;
+  }
+
+  .feedBack {
+    height: 70%;
+
+    .slick-dots{
+      right: -23%;
+    }
+    .slick-dots li button:before {
+      font-family: 'slick';
+      font-size: 10px;
+      line-height: 20px;
+      border: 1px solid rgba(247, 171, 50, 1);
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      content: '';
+      text-align: center;
+      color: #f7ab32;
+    }
+
+    .slick-dots li.slick-active button:before {
+      background:#fcdb5a;
+      opacity: 1;
+    }
+
+
+    .slide {
+      height: 100%;
+
+      p {
+        font-family: "Times New Roman", sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 25px;
+        line-height: 30px;
+        &:before {
+          content: open-quote open-quote;
+          font-family: "Times New Roman", sans-serif;
+          font-style: italic;
+          font-weight: bold;
+          color: #fde557;
+          font-size: 100px;
+          line-height: 100px;
+
+        }
+      }
+      .terens {
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: white;
+        margin-left: 50px;
+        .col-2 {
+          background: url("../img/terensBg.png") center center no-repeat;
+          height: 69px;
+          width: 69px;
+        }
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .slide2{
+      p {
+        font-family: "Times New Roman", sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 25px;
+        line-height: 30px;
+        &:before {
+          content: open-quote open-quote;
+          font-family: "Times New Roman", sans-serif;
+          font-style: italic;
+          font-weight: bold;
+          color: #fde557;
+          font-size: 100px;
+          line-height: 100px;
+
+        }
+      }
+      .terens {
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: white;
+        margin-left: 50px;
+        .col-2 {
+          background: url("../img/terensBg.png") center center no-repeat;
+          height: 69px;
+          width: 69px;
+        }
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .slide3{
+      p {
+        font-family: "Times New Roman", sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 25px;
+        line-height: 30px;
+        &:before {
+          content: open-quote open-quote;
+          font-family: "Times New Roman", sans-serif;
+          font-style: italic;
+          font-weight: bold;
+          color: #fde557;
+          font-size: 100px;
+          line-height: 100px;
+
+        }
+      }
+      .terens {
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: white;
+        margin-left: 50px;
+        .col-2 {
+          background: url("../img/terensBg.png") center center no-repeat;
+          height: 69px;
+          width: 69px;
+        }
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+//////////------------Blog Post section----------
+.blogPost {
+  height: 100vh;
+  a{
+    &:after {
+      content: '';
+      position: absolute;
+      width: 89%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 0 auto;
+      transition: opacity 0.6s;
+      opacity: 0;
+      text-underline: none;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      text-decoration: none;
+      text-underline: none;
+    }
+  }
+
+  .title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    span {
+      font-weight: 100;
+    }
+  }
+
+  .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #e1e1e1;
+  }
+
+  .firstItem {
+    background: url("../img/firstItemBg.png") center center no-repeat;
+    background-size: cover;
+    height: 396px;
+    width: 97%;
+
+
+    .date {
+      background: #fde557;
+
+      h5 {
+        font-family: Raleway, sans-serif;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 50px;
+        color: #000000;
+      }
+
+      p {
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 50px;
+        color: #9a8841;
+      }
+    }
+
+    .info {
+      h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color: #fcdb5a;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: Raleway, sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 18px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  .secondItem {
+    background: url("../img/secondItemBG.png") center center no-repeat;
+    background-size: cover;
+    height: 396px;
+    width:97%;
+
+    .date {
+      background: #fde557;
+
+      h5 {
+        font-family: Raleway, sans-serif;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 50px;
+        color: #000000;
+      }
+
+      p {
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 50px;
+        color: #9a8841;
+      }
+    }
+
+    .info {
+      h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color: #fcdb5a;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: Raleway, sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 18px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  .thirdItem {
+    background: url("../img/thirdItemBG.png") center center no-repeat;
+    background-size: cover;
+    height: 396px;
+    width: 97%;
+
+    .date {
+      background: #fde557;
+
+      h5 {
+        font-family: Raleway, sans-serif;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 50px;
+        color: #000000;
+      }
+
+      p {
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 50px;
+        color: #9a8841;
+      }
+    }
+
+    .info {
+      h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color: #fcdb5a;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: Raleway, sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 18px;
+        line-height: 50px;
+      }
+    }
+  }
+}
+////---------Footer--------
+
+footer{
+  background: #2e2e2e;
+  font-family: 'Open Sans', sans-serif;
+
+  .footer-logo{
+  background: url("../img/footer-logo.png") center center no-repeat;
+  background-size: cover;
+  height: 134px;
+}
+  h5{
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 23px;
+    color: #fde557;
+  }
+  p{
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #ffffff;
+  }
+
+  i{
+    font-size: 20px;
+    line-height: 23px;
+    color: #e1e1e1;
+  }
+
+  .map{
+    height: 300px;
+   padding-right: 0px;
+  }
+}
+
+///------Button Top------
+#go-top {
+  position: fixed;
+  bottom: 25px;
+  right: 70px;
+  text-align: center;
+  cursor:pointer;
+  display:none;
+  width: 80px;
+  height: 80px;
+  background: #fcdb5a;
+  font-size: 30px;
+  color: #e1e1e1;
+  padding-top: 20px;
+  opacity: 0.8;
+  line-height: 30px;
+  border-radius: 10px;
+}
+
+#go-top:hover {
+  background: #f7ab32;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  #bootstrap-overrides > section.slogan.container-fluid{
+    margin-bottom: 200px;
+  }
+  #bootstrap-overrides > section.container-fluid.banner > div > div > div > h1{
+    font-size: 130px;
+    top: calc(50%)
+  }
+}
+
